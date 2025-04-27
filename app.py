@@ -590,7 +590,7 @@ if st.session_state.analysis_complete:
                 st.session_state.spending_type = None
                 st.session_state.gpt_response = None
                 st.session_state.df = None
-                st.experimental_rerun()
+                st.rerun()
         st.markdown("</div>", unsafe_allow_html=True)
     # st.write(st.session_state.gpt_response)
 # 파일이 업로드되지 않았을 때는 안내 메시지만 표시
