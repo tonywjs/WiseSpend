@@ -494,7 +494,11 @@ if st.session_state.analysis_complete:
                     </div>""", unsafe_allow_html=True)
         
         # 이미지 파일 경로
-        image_path = os.path.join(current_dir, "images/", st.session_state.spending_type + ".png")
+        if st.session_state.spending_type == "욜로 개척자":
+            image_path = os.path.join("images/", "yolo.png")
+        if st.session_state.spending_type == "할인 추적자":
+            image_path = os.path.join("images/", "discount.png")
+        image_path = os.path.join("images/", st.session_state.spending_type + ".png")
         
         # 이미지 파일 존재 여부 확인
         if os.path.exists(image_path):
