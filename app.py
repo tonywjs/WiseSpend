@@ -417,7 +417,7 @@ st.image(image, use_container_width=True)
 
 
 # 메인 화면
-st.write("## 나의 지출 내역을 업로드하면 소비 패턴을 한 눈에!")
+st.write("### 나의 지출 내역을 업로드하면 소비 패턴을 한 눈에!")
 # 파일 업로드 위젯
 uploaded_file = st.file_uploader("", type=["xlsx", "csv"])
 
