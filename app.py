@@ -582,7 +582,7 @@ if st.session_state.analysis_complete:
         
         # 다시 분석하기 버튼
         st.markdown("<div style='text-align: center; margin-top: 2rem;'>", unsafe_allow_html=True)
-        col1, col2, col3 = st.columns([7, 5, 7])
+        col1, col2, col3 = st.columns([6, 6, 6])
         with col2:
             if st.button("다시 분석하기", use_container_width=True, key="analyze_again_button"):
                 st.session_state.analysis_complete = False
