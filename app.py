@@ -410,9 +410,9 @@ def analyze_spending_pattern(df):
 # image_path = os.path.join(current_dir, "images", "제목.png")
 # st.write(image_path)
 image = Image.open("images/title.png")
-st.image(image, use_column_width=True)
+st.image(image, use_container_width=True)
 # image = Image.open(image_path)
-# st.image(image, use_column_width=True)
+# st.image(image, use_container_width=True)
 
 
 
@@ -502,7 +502,7 @@ if st.session_state.analysis_complete:
             col1, col2, col3 = st.columns([1, 6, 1])
             with col2:  # 가운데 열에 이미지 배치
                 st.markdown("<div class='character-image'>", unsafe_allow_html=True)
-                st.image(image, width=400, use_column_width=True)
+                st.image(image, width=400, use_container_width=True)
                 st.markdown("</div>", unsafe_allow_html=True)
         else:
             st.warning(f"이미지 파일({image_path})을 찾을 수 없습니다.")
