@@ -406,7 +406,9 @@ def analyze_spending_pattern(df):
 
 
 # 제목
-image = Image.open("images/제목.png")
+current_dir = os.path.dirname(__file__)
+image_path = os.path.join(current_dir, "images", "제목.png")
+image = Image.open(image_path)
 st.image(image, use_column_width=True)
 
 
@@ -489,7 +491,7 @@ if st.session_state.analysis_complete:
                     </div>""", unsafe_allow_html=True)
         
         # 이미지 파일 경로
-        image_path = os.path.join("images/", st.session_state.spending_type + ".png")
+        image_path = os.path.join(current_dir, "images/", st.session_state.spending_type + ".png")
         
         # 이미지 파일 존재 여부 확인
         if os.path.exists(image_path):
