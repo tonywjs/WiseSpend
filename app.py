@@ -409,6 +409,7 @@ def analyze_spending_pattern(df):
 current_dir = os.path.dirname(__file__)
 image_path = os.path.join(current_dir, "images", "제목.png")
 image = Image.open(image_path)
+st.write(image_path)
 st.image(image, use_column_width=True)
 
 
