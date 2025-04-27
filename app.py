@@ -35,9 +35,9 @@ body {
 }
 
 /* 기본 배경 */
-.stApp {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9f2ff 100%);
-}
+# .stApp {
+#     background: linear-gradient(135deg, #f8f9fa 0%, #e9f2ff 100%);
+# }
 
 /* 버튼 */
 .stButton > button {
