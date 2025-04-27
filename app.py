@@ -3,7 +3,7 @@ import pandas as pd
 import os
 import time
 from PIL import Image
-from src.LLM_interface import analyze_with_gpt, analyze_with_gpt_test
+from src.LLM_interface import analyze_with_gpt
 import json
 from pydantic import ValidationError
 import openai
