@@ -603,4 +603,4 @@ if uploaded_file is None and not st.session_state.analyzing and not st.session_s
 
 # 푸터
 st.markdown("---")
-st.markdown("<footer>© 2023 슬기로운 월급생활 | Made with ❤️ using Streamlit</footer>", unsafe_allow_html=True) 
+st.markdown("<footer>© 2025 슬기로운 월급생활 | Made with ❤️ using Streamlit</footer>", unsafe_allow_html=True) 
